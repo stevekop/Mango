@@ -1,18 +1,14 @@
 using AutoMapper;
-using Mango.Services.CouponAPI;
-using Mango.Services.CouponAPI.Data;
+using Mango.Services.ProductApi;
+using Mango.Services.ProductApi.Data;
+using Mango.Services.ProductAPI.Extensions;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.IdentityModel.Tokens;
-using System.IdentityModel.Tokens.Jwt;
 using Microsoft.OpenApi.Models;
-using System.Text;
-using Mango.Services.CouponAPI.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
 builder.Services.AddDbContext<AppDBContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
@@ -71,14 +67,13 @@ ApplyMigrations();
 app.Run();
 
 
-
 void ApplyMigrations()
 {
     using (var scope = app.Services.CreateScope())
     {
         var _db = scope.ServiceProvider.GetRequiredService<AppDBContext>();
 
-        if (_db.Database.GetAppliedMigrations().Count() > 0 )
+        if (_db.Database.GetAppliedMigrations().Count() > 0)
         {
             _db.Database.Migrate();
         }

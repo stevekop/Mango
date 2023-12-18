@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mango.Services.CouponAPI", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mango.Web", "Mango.Web\Mango.Web.csproj", "{0E727F63-8EA4-4C3E-BBD0-CB3F8D7D6EDB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mango.Services.AuthAPI", "Mango.Services.AuthAPI\Mango.Services.AuthAPI.csproj", "{D50C2B78-DFC9-4A5A-BD63-3A6F94FFDA40}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mango.Services.AuthAPI", "Mango.Services.AuthAPI\Mango.Services.AuthAPI.csproj", "{D50C2B78-DFC9-4A5A-BD63-3A6F94FFDA40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mango.Services.ProductAPI", "Mango.Services.ProductAPI\Mango.Services.ProductAPI.csproj", "{287D25DF-1D09-40CC-8328-3E7A36CF6AB7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +37,10 @@ Global
 		{D50C2B78-DFC9-4A5A-BD63-3A6F94FFDA40}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D50C2B78-DFC9-4A5A-BD63-3A6F94FFDA40}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D50C2B78-DFC9-4A5A-BD63-3A6F94FFDA40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{287D25DF-1D09-40CC-8328-3E7A36CF6AB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{287D25DF-1D09-40CC-8328-3E7A36CF6AB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{287D25DF-1D09-40CC-8328-3E7A36CF6AB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{287D25DF-1D09-40CC-8328-3E7A36CF6AB7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -43,6 +49,7 @@ Global
 		{57CF5747-10A7-47DD-AFA7-2D5BF9694049} = {A061807B-2351-433A-A634-864636D2E8F8}
 		{0E727F63-8EA4-4C3E-BBD0-CB3F8D7D6EDB} = {9E055551-5360-47E6-992A-A4371A5158FF}
 		{D50C2B78-DFC9-4A5A-BD63-3A6F94FFDA40} = {A061807B-2351-433A-A634-864636D2E8F8}
+		{287D25DF-1D09-40CC-8328-3E7A36CF6AB7} = {A061807B-2351-433A-A634-864636D2E8F8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BA88C299-01CA-46AB-89FF-CDD7C467210C}
