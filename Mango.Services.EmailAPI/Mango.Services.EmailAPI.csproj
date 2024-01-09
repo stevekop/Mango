@@ -10,6 +10,7 @@
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="12.0.1" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="Azure.Communication.Email" Version="1.0.1" />
     <PackageReference Include="Azure.Identity" Version="1.10.4" />
     <PackageReference Include="Azure.Messaging.ServiceBus" Version="7.17.1" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.0" />

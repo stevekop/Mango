@@ -23,7 +23,7 @@ $(document).ready(function () {
 function loadDataTable(status) {
     dataTable = $('#tblData').DataTable({
         order: [[0, 'desc']],
-        "ajax": { url: "/order/getall?status=" + status },
+        "ajax": { url: "/order/getall"},   /*?status=" + status },*/
         "columns": [
             { data: 'orderHeaderId', "width": "5%"},
             { data: 'email', "width": "25%" },
