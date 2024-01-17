@@ -7,6 +7,7 @@ using System.Text;
 using Azure.Communication.Email;
 using Azure;
 using ExtensionMethods;
+using Mango.Services.EmailAPI.Utility;
 
 namespace Mango.Services.EmailAPI.Services
 {
@@ -80,7 +81,7 @@ namespace Mango.Services.EmailAPI.Services
         private static bool SendEmail(string message, string email)
         {
             // This code retrieves your connection string from an environment variable.
-            string connectionString = "endpoint=https://communication-service-email-demo-sck.unitedstates.communication.azure.com/;accesskey=H4BWfMNcuBWKoey9KQHT2Iep4zoc7eP1qakYrCfPKuFeiGPYS10yc4uX/7yonqLcj+lmY2bIB+uVe2T6HMu42A==";
+            string connectionString = Key.Email_Connection;
             var emailClient = new EmailClient(connectionString);
 
             // Create email content
